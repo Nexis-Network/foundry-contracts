@@ -14,14 +14,14 @@ This repository contains the Foundry smart contract, a Solidity-based system for
 
 ## Overview
 
-The Foundry contract implements a gamified system where users can register, perform daily check-ins to earn XP points, purchase boosters to increase their XP earnings, and convert their XP points to ETH.
+The Foundry contract implements a gamified system where users can register, perform daily check-ins to earn XP points, purchase boosters to increase their XP earnings, and convert their XP points to NZT.
 
 ## Features
 
 - User registration
 - Daily check-ins with increasing rewards for consecutive days
 - Booster system to multiply XP earnings
-- XP to ETH conversion
+- XP to NZT conversion
 - Owner-controlled pricing and conversion rates
 
 ## Contract Details
@@ -55,7 +55,7 @@ The Foundry contract implements a gamified system where users can register, perf
    ```solidity
    function withdrawXP() public
    ```
-   Converts user's XP points to ETH and transfers it to their account.
+   Converts user's XP points to NZT and transfers it to their account.
 
 5. **Fetch User Info**
    ```solidity
@@ -75,12 +75,12 @@ The Foundry contract implements a gamified system where users can register, perf
    function changeXpConversionRate(uint256 newRate) public onlyOwner
    ```
 
-3. **Deposit ETH**
+3. **Deposit NZT**
    ```solidity
    function depositNZT() public payable onlyOwner
    ```
 
-4. **Withdraw ETH**
+4. **Withdraw NZT**
    ```solidity
    function withdrawNZT(uint256 amount) public onlyOwner
    ```
